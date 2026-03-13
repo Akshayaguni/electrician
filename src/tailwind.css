@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles for glassmorphism, shadows, and overrides */
+.glass {
+  @apply bg-white bg-opacity-30 backdrop-blur-glass shadow-glass rounded-xl border border-white border-opacity-20;
+}
+.shadow-subtle {
+  @apply shadow-lg shadow-darkNavy/10;
+}
+
+/* Responsive utility for sticky/floating buttons */
+.sticky-header {
+  @apply sticky top-0 z-50 bg-darkNavy bg-opacity-90 backdrop-blur-glass shadow-subtle;
+}
+.floating-whatsapp {
+  @apply fixed bottom-6 right-6 z-40 bg-electricBlue text-white rounded-full p-4 shadow-subtle hover:bg-darkNavy transition-all duration-300;
+}
+.call-now-mobile {
+  @apply fixed bottom-20 right-6 z-40 bg-electricBlue text-white rounded-full p-4 shadow-subtle md:hidden hover:bg-darkNavy transition-all duration-300;
+}
