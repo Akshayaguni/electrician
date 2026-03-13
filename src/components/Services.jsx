@@ -45,13 +45,13 @@ const services = [
 
 export default function Services() {
   return (
-    <section className="max-w-6xl mx-auto py-16 px-4">
+    <section id="services" className="max-w-6xl mx-auto py-16 px-4">
       <h2 className="text-2xl md:text-3xl font-bold mb-8 text-electricBlue text-center">Our Services</h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
         {services.map((service, idx) => (
           <div
             key={idx}
-            className="glass shadow-subtle flex flex-col items-center p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:bg-white hover:bg-opacity-80"
+            className="glass shadow-subtle flex flex-col items-center p-6 transition-transform duration-300 hover:-translate-y-2 hover:shadow-xl hover:bg-white/80"
           >
             <div className="mb-4 text-electricBlue">{service.icon}</div>
             <h3 className="text-lg font-semibold mb-2 text-darkNavy">{service.title}</h3>
