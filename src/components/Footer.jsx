@@ -24,7 +24,7 @@ export default function Footer() {
         </div>
       </div>
       <div className="text-center mt-8 text-sm text-white/70">
-        &copy; {new Date().getFullYear()} Abhishek Pokar Electrical Services. All rights reserved.
+        &copy; 2026 Akshay. All rights reserved.
       </div>
     </footer>
   );
