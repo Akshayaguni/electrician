@@ -48,16 +48,15 @@ export default function Contact() {
             className="p-3 rounded-lg border border-electricBlue focus:outline-none focus:ring-2 focus:ring-electricBlue"
             rows={4}
           />
-          <button type="submit" className="bg-electricBlue text-white font-semibold py-3 px-6 rounded-full shadow-subtle hover:bg-darkNavy transition-all duration-300">
+          <button type="submit" className="bg-electricBlue text-white font-semibold py-3 px-6 rounded-full shadow-lg hover:bg-darkNavy transition-all duration-300">
             Submit
           </button>
           {success && (
-            <div className="bg-green-100 text-green-700 rounded-lg p-3 mt-2 text-center animate-fadeIn">Thank you! Your message was sent.</div>
+            <div className="bg-green-100 text-green-700 rounded-lg p-3 mt-2 text-center">Thank you! Your message was sent.</div>
           )}
         </form>
         <div className="flex-1 flex flex-col gap-4 items-center justify-center">
-          <div className="w-full h-48 bg-darkNavy bg-opacity-20 rounded-lg flex items-center justify-center text-electricBlue text-lg mb-4">
-            {/* Google Map Placeholder */}
+          <div className="w-full h-48 bg-darkNavy/20 rounded-lg flex items-center justify-center text-electricBlue text-lg mb-4">
             <MapPin size={32} /> Gujarat, India
           </div>
           <div className="flex flex-col gap-2 text-darkNavy">

@@ -30,7 +30,7 @@ export default function Testimonials() {
                 <Star key={i} size={20} className="text-electricBlue" fill="#0EA5E9" />
               ))}
             </div>
-            <p className="text-darkNavy text-base mb-4 text-center">"{t.review}"</p>
+            <p className="text-darkNavy text-base mb-4 text-center">&quot;{t.review}&quot;</p>
             <span className="font-semibold text-electricBlue">- {t.name}</span>
           </div>
         ))}

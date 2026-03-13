@@ -17,7 +17,7 @@ export default function WhyChooseUs() {
         <ul className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {points.map((point, idx) => (
             <li key={idx} className="flex items-center gap-4 text-darkNavy text-lg font-medium">
-              <span className="bg-electricBlue bg-opacity-20 rounded-full p-2 text-electricBlue shadow-subtle">
+              <span className="bg-electricBlue/20 rounded-full p-2 text-electricBlue shadow-lg">
                 {point.icon}
               </span>
               {point.text}
